@@ -5,12 +5,12 @@ Simple Express JS application with basic routes for farther test practicing
 ```npm start```
 
 2. Verify app available on:
-```localhost:3000```
+```localhost:3333```
 
 3. There are following endpoints:
-```
-/
-/users
-/articles
-/articles/${article_id}
-```
+
+* Get all users: ```GET /users```
+* Get current user: ```GET /users/${userId}```
+* Update user: ```PUT /users```
+* Create user: ```POST /users```
+* Delete user: ```DELETE /users``

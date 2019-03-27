@@ -1,6 +1,9 @@
-# simple-express-app
-Simple Express JS application with basic routes for farther test practicing.
+
+# **Express**-app-under-test
+Simple Express JS application with basic routes for farther automation.</div>
+
 ![Image alt text](/public/logo.png)
+ 
 
 ## Run application:
 * ```npm install```

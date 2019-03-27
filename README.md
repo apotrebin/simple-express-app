@@ -3,15 +3,17 @@
 Simple Express JS application with basic routes for farther automation.</div>
 
 ![Image alt text](/public/logo.png)
- 
 
 ## Run application:
 * ```npm install```
 * ```npm start```
 * ```localhost:3333```
 
-## Use following endpoints:
+## Run with docker:
+* Exec ```docker run -d -p 8081:3333 akramqa/express```
+* Go to ```localhost:8081```
 
+## Use following endpoints:
 * Get all users: ```GET /users```
 * Get current user: ```GET /users/${userId}```
 * Update user: ```PUT /users```

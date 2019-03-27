@@ -1,11 +1,13 @@
 # simple-express-app
 Simple Express JS application with basic routes for farther test practicing
 
-Run application:
+1. Run application:
 ```npm start```
 
+2. Verify app available on:
+```localhost:3000```
 
-There are following endpoints:
+3. There are following endpoints:
 ```
 /
 /users

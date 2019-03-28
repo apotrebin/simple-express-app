@@ -35,9 +35,7 @@ jobs:
 
       # run tests!
       - run: yarn unit-tests
-
       - run: tar cf unit-test-report.tar unit-tests-report && mv unit-test-report.tar ./unit-tests-report/
-
+      
       - store_artifacts:
           path: ~/repo/unit-tests-report
-          destination: ~/repo/unit-tests-report/unit-test-report.tar

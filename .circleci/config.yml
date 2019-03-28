@@ -37,4 +37,4 @@ jobs:
       - run: yarn unit-tests
 
       - store_artifacts:
-          path: /tmp/unit-tests-report
+          path: /unit-tests-report

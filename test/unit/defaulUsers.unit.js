@@ -13,7 +13,7 @@ describe('Default users', function(){
      assert.equal(usersObj.list.length, 3, 'There are not 3 default user');
     });
 
-    describe.skip('Assert all default users in storage', function () {
+    describe('Assert all default users in storage', function () {
       const params = [
                       {"_id":1, "name":"John Doe",        "role":"admin",       "email":"john@app.io"},
                       {"_id":2, "name":"Jaskaran Nixon",  "role":"user",        "email":"jaskaran@app.io"},

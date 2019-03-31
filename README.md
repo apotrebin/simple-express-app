@@ -1,6 +1,7 @@
 
 # **Express**-app-under-test
 Simple Express JS application with basic routes for farther automation.</div>
+<br/>
 [![CircleCI](https://circleci.com/gh/apotrebin/simple-express-app.svg?style=svg)](https://circleci.com/gh/apotrebin/simple-express-app)
 
 ![Image alt text](/public/logo.png)

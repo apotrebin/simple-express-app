@@ -1,7 +1,8 @@
+process.env.NODE_ENV = 'test';
+
 const usersObj = require('../../store/store');
 const itParam = require('mocha-param');
 const assert = require('chai').assert;
-
 
 describe('Default users', function(){
 
@@ -19,7 +20,7 @@ describe('Default users', function(){
                       {"_id":2, "name":"Jaskaran Nixon", "role":"user",       "email":"jaskaran@app.io"},
                       {"_id":3, "name":"Tyler Pitt",     "role":"accountant", "email":"tyler@app.io"}
                     ];
-      itParam(`assert current user`, params, async function (param) {
+      itParam('assert current user', params, function (param) {
         const paramIndex = param._id-1;
         assert.equal(usersObj.list[paramIndex].name, param.name);
         assert.equal(usersObj.list[paramIndex].role, param.role);

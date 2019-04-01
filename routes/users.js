@@ -19,13 +19,18 @@ router.post('/', function(req, res) {
     "email":email
   };
   usersObj.list.push(newUser);
+  res.type('json');
   res.send(`${JSON.stringify(newUser)}`);
 });
 
-router.delete('/', function(req, res) {
-  var _id = req.body._id;
-  delete usersObj.list[_id-1];
-  res.send(`User with id: ${_id} was deleted!}`);
+router.delete('/:id', function(req, res) {
+  let indexOfUser = parseInt(req.params.id, 10)-1;
+  delete usersObj.list[indexOfUser];
+  // var _id = req.body._id;
+  // delete usersObj.list[_id-1];
+  // res.type('json');
+  // res.send(`{"message": "User with id: ${indexOfUser+1} was deleted!}""`);
+  res.send("Hello");
 });
 
 router.get('/:id', function(req, res) {
@@ -33,6 +38,7 @@ router.get('/:id', function(req, res) {
   let currentUser = usersObj.list[indexOfUser];
   console.log("length of array is: " + usersObj.list.length);
   console.log("Index is: " + indexOfUser + " end user is: " + currentUser);
+  res.type('json');
   res.send(`${JSON.stringify(currentUser)}`);
 });
 
@@ -51,6 +57,7 @@ router.put('/', function(req, res) {
   };
   usersObj.list.push(newUser);
 
+  res.type('json');
   res.send(`User with id: ${_id} was updated!}`);
 });
 

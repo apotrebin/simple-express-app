@@ -15,9 +15,9 @@ describe('Default users', function(){
 
     describe('Assert all default users in storage', function () {
       const params = [
-                      {"_id":1, "name":"John Doe",        "role":"admin",       "email":"john@app.io"},
-                      {"_id":2, "name":"Jaskaran Nixon",  "role":"user",        "email":"jaskaran@app.io"},
-                      {"_id":3, "name":"Tyler Pitt",      "role":"accountant",  "email":"tyler@app.io"}
+                      {"_id":1, "name":"John Doe",       "role":"admin",      "email":"john@app.io"},
+                      {"_id":2, "name":"Jaskaran Nixon", "role":"user",       "email":"jaskaran@app.io"},
+                      {"_id":3, "name":"Tyler Pitt",     "role":"accountant", "email":"tyler@app.io"}
                     ];
       itParam(`assert current user`, params, async function (param) {
         const paramIndex = param._id-1;
@@ -26,4 +26,6 @@ describe('Default users', function(){
         assert.equal(usersObj.list[paramIndex].email, param.email);
       });
     });
+
+    it('validate email mask for "email" property');
 });

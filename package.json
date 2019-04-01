@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "unit-tests": "mocha ./test/unit/*.unit.js -R=mochawesome --reporter-options reportDir=unit-tests-report || true"
+    "unit-tests": "./node_modules/mocha/bin/mocha ./test/unit/*.unit.js -R=mochawesome --reporter-options reportDir=unit-tests-report || true"
   },
   "repository": {
     "type": "git",

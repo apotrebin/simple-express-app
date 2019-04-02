@@ -2,7 +2,7 @@
 # **Express**-app-under-test
 Simple Express JS application with basic routes for farther automation.</div>
 <br/>
-[![CircleCI](https://circleci.com/gh/apotrebin/simple-express-app.svg?style=svg)](https://circleci.com/gh/apotrebin/simple-express-app)
+[![Build Status](https://travis-ci.com/apotrebin/simple-express-app.svg?branch=master)](https://travis-ci.com/apotrebin/simple-express-app) | [![CircleCI](https://circleci.com/gh/apotrebin/simple-express-app.svg?style=svg)](https://circleci.com/gh/apotrebin/simple-express-app)
 
 ![Image alt text](/public/logo.png)
 

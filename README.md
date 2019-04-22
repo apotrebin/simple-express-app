@@ -12,12 +12,32 @@ Simple Express JS application with basic routes for farther automation.</div>
 * ```localhost:3333```
 
 ## Run with docker:
-* Exec ```docker run -d -p 8081:3333 akramqa/express```
-* Go to ```localhost:8081```
+* ```docker run -d -p 8081:3333 akramqa/express```
+* ```localhost:8081```
+
+## Do tests directly on heroku
+* https://express-app-under-test.herokuapp.com
 
 ## Use following endpoints:
 * Get all users: ```GET /users```
-* Get current user: ```GET /users/${userId}```
-* Update user: ```PUT /users```
+* Get current user: ```GET /users/:id```
 * Create user: ```POST /users```
-* Delete user: ```DELETE /users```
+```
+{
+    "username":"Akram P",
+    "role":"admin",
+    "email":"akramp@notexistingemaildoma.in"
+}
+```
+
+* Edit user: ```PUT /users```
+```
+{
+    "_id":4,
+    "username":"Akram P",
+    "role":"admin",
+    "email":"akramp@notexistingemaildoma.in"
+}
+```
+
+* Delete user: ```DELETE /users/:id```

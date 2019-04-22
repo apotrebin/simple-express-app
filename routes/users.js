@@ -30,7 +30,7 @@ router.delete('/:id', function(req, res) {
   // delete usersObj.list[_id-1];
   // res.type('json');
   // res.send(`{"message": "User with id: ${indexOfUser+1} was deleted!}""`);
-  res.send("Hello");
+  res.send(`User with id: ${_id} was deleted!`);
 });
 
 router.get('/:id', function(req, res) {
@@ -58,7 +58,7 @@ router.put('/', function(req, res) {
   usersObj.list.push(newUser);
 
   res.type('json');
-  res.send(`User with id: ${_id} was updated!}`);
+  res.send(`User with id: ${_id} was updated!`);
 });
 
 module.exports = router;

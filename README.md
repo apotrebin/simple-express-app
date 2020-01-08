@@ -16,7 +16,7 @@ Simple Express JS application with basic routes for farther automation.</div>
 * ```localhost:8081```
 
 ## Do tests directly on heroku
-* https://express-app-under-test.herokuapp.com
+* https://api-test-app-simple.herokuapp.com/
 
 ## Use following endpoints:
 * Get all users: ```GET /users```

@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:21.2-alpine3.18
 MAINTAINER Akram Potrebin <apotrebin@gmail.com>
 WORKDIR /usr/src/app
 COPY . .
